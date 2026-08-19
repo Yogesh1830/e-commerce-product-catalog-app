@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore | Capstone Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Professional E-Commerce Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">TechStore</div>
+            <!-- Client-Side Routing Tab System Navigation -->
+            <nav>
+                <button class="nav-btn active" data-tab="catalog">Products</button>
+                <button class="nav-btn" data-tab="cart">Cart (<span id="cart-count">0</span>)</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Dynamic Application Container -->
+    <main class="app-container">
+        
+        <!-- Tab 1: Product Catalog View -->
+        <section id="catalog-tab" class="tab-content active">
+            <h2 class="section-title">Explore Our Catalog</h2>
+            <div id="product-grid" class="product-grid">
+                <!-- Products dynamically rendered by JS architecture -->
+            </div>
+        </section>
+
+        <!-- Tab 2: Shopping Cart View -->
+        <section id="cart-tab" class="tab-content">
+            <h2 class="section-title">Your Shopping Cart</h2>
+            <div id="cart-wrapper">
+                <div id="cart-items-list" class="cart-items-list">
+                    <!-- Items rendered dynamically -->
+                </div>
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Total Price:</span>
+                        <span id="cart-total">$0.00</span>
+                    </div>
+                    <button id="checkout-btn" class="checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechStore Dashboard. Built as a Senior Capstone Project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
